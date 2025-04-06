@@ -9,4 +9,5 @@ COPY --from=0 --chown=httpenv:httpenv /go/httpenv /httpenv
 EXPOSE 8888
 # we're not changing user in this example, but you could:
 # USER httpenv
+
 CMD ["/httpenv"]
